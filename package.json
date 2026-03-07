@@ -1,0 +1,22 @@
+{
+  "name": "order-api-sample",
+  "version": "1.0.0",
+  "description": "Sample Order API with OpenAPI spec and Node.js implementation",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development node src/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "openapi",
+    "order-api",
+    "express",
+    "nodejs"
+  ],
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0"
+  }
+}

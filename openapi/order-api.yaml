@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Order API
+  version: 1.0.0
+  description: |
+    Simple Order API used for demo purposes.
+servers:
+  - url: http://localhost:3000
+paths:
+  /orders:
+    get:
+      summary: List orders
+      responses:
+        '200':
+          description: A list of orders
+    post:
+      summary: Create an order
+      requestBody:
+        required: true
+      responses:
+        '201':
+          description: Order created
+  /orders/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Get an order
+      responses:
+        '200':
+          description: Order details
+        '404':
+          description: Not found
+    put:
+      summary: Replace an order
+      requestBody:
+        required: true
+      responses:
+        '200':
+          description: Order replaced
+    patch:
+      summary: Update an order partially
+      requestBody:
+        required: true
+      responses:
+        '200':
+          description: Order updated
+    delete:
+      summary: Delete an order
+      responses:
+        '204':
+          description: Order deleted
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        id:
+          type: string
+        item:
+          type: string
+        quantity:
+          type: integer
+        status:
+          type: string
