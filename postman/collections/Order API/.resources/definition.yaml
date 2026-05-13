@@ -1,0 +1,5 @@
+$kind: collection
+description: Collection for the Order API running on localhost:3000
+variables:
+  baseUrl: http://localhost:3000
+  orderId: order_1

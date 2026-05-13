@@ -1,0 +1,12 @@
+owner: "52973382"
+team: "13347347"
+lastUpdatedBy: "52973382"
+lastRevision: 1776288270000
+name: Order API Mock
+color: null
+values:
+  - key: baseUrl
+    value: https://84baeb79-5564-424b-8326-937efa8c3e3b.mock.pstmn.io
+    enabled: true
+createdAt: 2026-04-15T21:23:23.000Z
+updatedAt: 2026-04-15T21:24:30.000Z

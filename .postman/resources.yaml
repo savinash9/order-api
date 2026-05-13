@@ -1,0 +1,20 @@
+workspace:
+  id: b44c0a02-d291-4697-acc5-3718caeb006b
+localResources:
+  specs:
+    - ../openapi/order-api.yaml
+  collections:
+    - ../postman/collections/Order API
+    - ../postman/collections/Order API-1
+  environments:
+    - ../postman/environments/Local Environment.environment.yaml
+    - ../postman/environments/Order API Mock.environment.yaml
+cloudResources:
+  specs:
+    ../openapi/order-api.yaml: e2ab2816-0f95-484b-8de7-c5ea2918724f
+  collections:
+    ../postman/collections/Order API: 52973382-a810da11-8cc8-4730-bffc-349122becb19
+    ../postman/collections/Order API-1: 52973382-15e5f92f-39db-42ea-b34b-220960d67132
+  environments:
+    ../postman/environments/Local Environment.environment.yaml: 52973382-0e7ad9c6-0ba8-59a6-9265-fe6d39e145a0
+    ../postman/environments/Order API Mock.environment.yaml: 52973382-ddae2853-8453-4084-94ca-a686951bd6ac

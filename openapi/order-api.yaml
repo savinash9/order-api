@@ -17,6 +17,10 @@ paths:
       summary: Create an order
       requestBody:
         required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
       responses:
         '201':
           description: Order created
@@ -38,6 +42,10 @@ paths:
       summary: Replace an order
       requestBody:
         required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
       responses:
         '200':
           description: Order replaced
@@ -45,6 +53,10 @@ paths:
       summary: Update an order partially
       requestBody:
         required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
       responses:
         '200':
           description: Order updated
